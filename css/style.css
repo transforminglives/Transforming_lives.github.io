@@ -1,0 +1,463 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+.img{
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+/* Estilo del botón de menú */
+.menu-toggle {
+    font-size: 2rem;
+    color: #1787f7;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s;
+    z-index: 11;
+}
+
+/* Efecto hover en el botón de menú */
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    justify-content: space-around;
+}
+
+/* Estilo de la lista dentro del menú */
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de cada item de la lista */
+.nav-menu li {
+    margin: 0 15px;
+}
+
+/* Estilo de los enlaces del menú */
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0e0d7e;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+/* Efecto hover sobre los enlaces */
+.nav-menu a:hover {
+    color: #63d886;
+    transform: scale(1.1);
+    border-bottom: 2px solid #63d886;
+}
+
+/* Estilo para el enlace activo */
+.nav-menu a.active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+/* Subrayado animado en los enlaces */
+/*.nav-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #050505;
+    transition: width 0.3s;
+    margin-top: 2px;
+}*/
+
+/* Efecto hover para el subrayado */
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/*nav ul li a {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: #333;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0; 
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%; 
+  }*/
+/*-----------*/
+
+
+.carrusel{
+    img{
+        filter: brightness(0.5);
+    } 
+    h5{
+        color: rgb(23, 23, 214);
+        
+        font-size: 50px;
+        /*-webkit-text-stroke: black 1px;*/
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    p{
+        color: #edeff3;
+        font-size: 30px;
+    }
+}
+.carrusel2{
+    width: 100%;
+    border-radius: 8px;
+    
+    img{
+        height: 93vh;
+        width: auto;
+        border-radius: 50px;
+    }
+}
+
+.carrusel-tiktok{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+    height: 100%;
+    margin-inline: 2%;
+
+    .sec-tiktok{
+        background-color: gray;
+        width: 100%;
+        video{
+            width: 100%;
+        }
+    }
+}
+
+.mision{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(116, 233, 126);
+    border-radius: 50px;
+    h2{
+        color: rgb(8, 8, 8);
+       margin-top: 40px;
+    }   
+    
+    p{
+        color: white;
+        text-align: justify;
+        padding: 20px; 
+    }   
+}
+.vision{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(116, 233, 126);
+    border-radius: 50px;
+    h2{
+        margin-top: 40px;
+        color: rgb(5, 5, 5);
+    }   
+    
+    p{
+        color: white;
+        text-align: justify;
+        padding: 20px; 
+    }   
+}
+.contenido{
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+  
+.barra{
+    background-color:white;
+    color: #070707;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    h2{
+        text-decoration: underline;
+      }
+      
+      h2:hover {
+        text-decoration: none;
+      }
+}
+
+.items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-inline: 10%;
+}
+.productos{
+    background-color:rgb(255, 253, 255);
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.productos:hover{
+    transform: scale(1.05);
+}
+
+.productos div{
+    transition: transform 0.5s;
+}
+
+.productos div:hover{
+    transform: scale(1.0);
+}
+
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(116, 233, 126);
+    ul{margin: 0; padding: 0;}
+}
+
+.contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    h3{
+        color: #11138f;
+    }
+    li{
+        list-style-type: none;
+        padding: 1rem;
+
+        a{
+            text-decoration: none;
+            color: rgb(15, 15, 15);
+        }
+    }   
+}
+
+
+/*-----------*/
+footer ul li a {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+footer ul li a:hover {
+    color: #f7f2f8;
+}
+
+@media(max-width:900px){
+    header{
+        justify-content: center;
+    }
+
+    .menu{
+        flex-direction: row;
+        margin-left: 15px;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion{
+        display:flex;
+        flex-direction: column;
+       
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+    .mision{
+        align-items: center;
+    }
+    .vision{
+        align-items: center;
+    }
+    .items{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .carrusel2{
+        margin: 8px;
+        img{
+            height: 55vh;
+        }
+    }
+    .productos{
+        width: 100%; 
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .contactos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactos .inf{
+        text-align: center;
+        li{
+            text-align: center;
+        }
+    }
+    
+    nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav ul{
+        display: none;
+    }  
+    
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        z-index: 11;
+    }
+
+    /* El menú de navegación se oculta inicialmente */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(178, 178, 179, 0.8);
+        border-top: 1px solid #f8f9fa;
+        padding: 10px 0;
+        color: #000;
+    }
+
+    /* Mostrar el menú cuando el checkbox esté marcado */
+    .menu-checkbox:checked + .menu-toggle + .nav-menu {
+        display: flex;
+    }
+
+    /* El menú en dispositivos móviles se organiza en columna */
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Espaciado entre los elementos del menú */
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    /* Estilo de los enlaces en dispositivos móviles */
+    .nav-menu a {
+        padding: 10px 15px;
+        width: 100%;
+        color: #000;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+    }
+
+    /* Efecto hover para los enlaces en dispositivos móviles */
+    .nav-menu a:hover {
+        background-color: #51f9ff;
+        color: #000;
+    }
+
+    .carrusel-tiktok{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 420px){
+    .inf-g{
+        padding: 2%;
+    }
+}
+
+@media(max-width: 350px){
+    footer{
+        padding: 0;
+    }
+    
+    .inf-g{
+        padding: 0;
+    }
+}
